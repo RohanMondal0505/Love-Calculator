@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #393b44;
+    overflow: hidden;
+}
+
+.box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    background: #ff414d;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+
+.box .input {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.box .input input {
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    font-size: 18px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.box .button {
+    width: 100%;
+    height: 30%;
+    display: grid;
+    place-items: center;
+}
+
+.box .button #btn {
+    padding: 10px;
+    width: 150px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    background: #1aa6b7;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    transition: background 0.4s ease;
+}
+
+.box .button #btn i {
+    transition: color .4s ease;
+    color:#ff0019;
+}
+
+.box .button #btn:hover {
+    background: #f56a79;
+}
+
+.box .button #btn:hover i {
+    color: rgb(255, 255, 255);
+}
+
+.box .output {
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 15px;
+}
+.box .output p{
+    display: inline-block;
+    width: 150px;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #ffffff;
+}
+@media(max-width:427px){
+    .box{
+        max-width: 400px;
+        height: 400px;
+    }
+    .box .input {        
+        flex-direction: column;
+    }
+    .box .input input {
+        width: 250px;
+        
+    }
+}
